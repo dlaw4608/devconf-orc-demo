@@ -23,8 +23,8 @@ spec:
     cloudName: openstack
     secretName: cloud-config
   managementPolicy: managed
-  networkRef: internal
   resource:
+    networkRef: internal
     securityGroupRefs:
     - allow-ssh
     - default
