@@ -5,6 +5,65 @@ components:
 - ../../components/kustomizeconfig
 
 resources:
+- ../../bases/orcdemo
 - external-network.yaml
 - default-securitygroup.yaml
 - flavors.yaml
+
+patches:
+- target:
+    group: openstack.k-orc.cloud
+    version: v1alpha1
+    kind: Server
+  patch: |-
+    - op: replace
+      path: /spec/cloudCredentialsRef/cloudName
+      value: vexxhost
+- target:
+    group: openstack.k-orc.cloud
+    version: v1alpha1
+    kind: Port
+  patch: |-
+    - op: replace
+      path: /spec/cloudCredentialsRef/cloudName
+      value: vexxhost
+- target:
+    group: openstack.k-orc.cloud
+    version: v1alpha1
+    kind: SecurityGroup
+  patch: |-
+    - op: replace
+      path: /spec/cloudCredentialsRef/cloudName
+      value: vexxhost
+- target:
+    group: openstack.k-orc.cloud
+    version: v1alpha1
+    kind: Image
+  patch: |-
+    - op: replace
+      path: /spec/cloudCredentialsRef/cloudName
+      value: vexxhost
+- target:
+    group: openstack.k-orc.cloud
+    version: v1alpha1
+    kind: Network
+  patch: |-
+    - op: replace
+      path: /spec/cloudCredentialsRef/cloudName
+      value: vexxhost
+- target:
+    group: openstack.k-orc.cloud
+    version: v1alpha1
+    kind: Subnet
+  patch: |-
+    - op: replace
+      path: /spec/cloudCredentialsRef/cloudName
+      value: vexxhost
+- target:
+    group: openstack.k-orc.cloud
+    version: v1alpha1
+    kind: Router
+  patch: |-
+    - op: replace
+      path: /spec/cloudCredentialsRef/cloudName
+      value: vexxhost

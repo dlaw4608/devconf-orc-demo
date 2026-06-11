@@ -5,7 +5,7 @@ metadata:
   name: default
 spec:
   cloudCredentialsRef:
-    cloudName: openstack
+    cloudName: vexxhost
     secretName: cloud-config
   managementPolicy: unmanaged
   import:
