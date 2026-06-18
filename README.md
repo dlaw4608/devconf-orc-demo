@@ -1,4 +1,5 @@
 # OpenStack Resource Controller (ORC) GitOps Demo
+## Demo video available through this link: https://youtu.be/mCYMpRV4yVw
 
 This repository demonstrates **GitOps-based multi-cloud OpenStack infrastructure management** using [OpenStack Resource Controller (ORC)](https://github.com/k-orc/openstack-resource-controller) and [ArgoCD](https://argoproj.github.io/cd/).
 
@@ -361,7 +362,3 @@ This demo is designed to showcase:
 - [OpenStack Resource Controller](https://github.com/k-orc/openstack-resource-controller)
 - [ArgoCD Documentation](https://argo-cd.readthedocs.io/)
 - [Kustomize Documentation](https://kustomize.io/)
-
-## License
-
-This demo is provided as-is for educational and demonstration purposes.
